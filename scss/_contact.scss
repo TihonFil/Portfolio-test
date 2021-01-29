@@ -1,0 +1,123 @@
+.contact {
+   background-color: $bg-gray;
+}
+
+.contact__title {
+   text-align: center;
+   padding-top: 90px;
+}
+
+.contact__text {
+   margin: 50px auto 50px;
+   text-align: center;
+   max-width: 45%;
+}
+
+.contact__form-wrap {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.contact__form {
+   max-width: 100%;
+}
+
+.contact__wrap {
+   display: flex;
+}
+
+.contact__box + .contact__box {
+   padding-left: 30px;
+   padding-bottom: 20px;
+}
+
+.contact__box {
+   display: flex;
+   flex-direction: column;
+}
+
+.contact__input {
+   padding: 10px 30px 10px 10px;
+}
+
+.contact__textarea {
+   resize: none;
+   padding: 10px;
+}
+
+.contact__input,
+.contact__textarea {
+   border: none;
+   outline: none;
+}
+
+.contact__input:focus,
+.contact__textarea:focus {
+   outline: 2px solid $blue;
+}
+
+.contact__input::placeholder,
+.contact__textarea::placeholder {
+   padding-left: 5px;
+}
+
+.contact__button-wrap {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 40px;
+   padding-bottom: 90px;
+}
+
+.contact__button {
+   padding: 10px 30px;
+   background-color: $blue;
+   color: $white;
+   border: none;
+   cursor: pointer;
+   transition: all .2s linear;
+   &:hover {
+      background-color: $blue-hover;
+   }
+}
+
+@media (max-width: 960px) {
+   .contact__text {
+      max-width: 70%;
+   }
+   .contact__title {
+      padding-top: 80px;
+   }
+}
+
+@media (max-width: 768px) {
+   .contact__title {
+      padding-top: 70px;
+   }
+}
+
+@media (max-width: 570px) {
+   .contact__wrap {
+      display: block;
+   }
+   .contact__box + .contact__box {
+      padding-left: 0;
+      padding-bottom: 20px;
+   }
+   .contact__input {
+      max-width: 80%;
+   }
+}
+
+@media (max-width: 420px) {
+   .contact__title {
+      padding-top: 50px;
+   }
+   .contact__text {
+      max-width: 90%;
+   }
+   .contact__input {
+      max-width: 100%;
+   }
+}

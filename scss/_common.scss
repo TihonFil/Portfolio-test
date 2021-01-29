@@ -1,0 +1,16 @@
+.text {
+   color: $text-gray;
+}
+
+.title {
+   font-size: 32px;
+   line-height: 37px;
+   font-weight: 500;
+}
+
+@media (max-width: 420px)  {
+   .title {
+      font-size: 27px;
+      line-height: 32px;
+   }
+}

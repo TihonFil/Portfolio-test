@@ -1,0 +1,92 @@
+.gallery {
+   background-color: $white;
+}
+
+.gallery__list {
+   display: flex;
+   flex-wrap: wrap;
+   overflow: hidden; 
+   padding-bottom: 72px; 
+}
+
+.galerry__item {
+   position: relative;
+   display: flex;
+   flex:25%;
+   overflow: hidden;
+   cursor: pointer;
+   
+   &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $blue-op-8;
+      background-image: url(/images/eye.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: opacity .3s linear;
+      opacity: 0;
+   }  
+}
+
+.galerry__item:hover::after {
+   opacity: 1;
+}
+
+.gallery__img {
+   max-width: 100%;
+   height: auto;
+}
+
+.gallery__sistem {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   padding-bottom: 100px;
+}
+
+.gallery__sistem-img {
+   padding-right: 30px;
+}
+
+.gallery__sistem-img:last-child {
+   padding-right: 0;
+}
+
+@media (max-width: 960px) {
+   .gallery__list {
+      padding-bottom: 60px;
+   }
+   .galerry__item {
+      flex: 50%;
+   }
+   .gallery__sistem-img {
+      padding: 0;
+      flex: 50%;
+   }
+   .gallery__sistem {
+      padding-bottom: 80px;
+   }
+}
+
+@media (max-width: 768px) {
+   .gallery__list {
+      padding-bottom: 45px;
+   }
+   .gallery__sistem {
+      padding-bottom: 50px;
+   }
+}
+
+@media (max-width: 420px) {
+   .gallery__list {
+      padding-bottom: 25px;
+   }
+   .gallery__sistem {
+      padding-bottom: 30px;
+   }
+}

@@ -1,0 +1,74 @@
+.about-me__title {
+   text-align: center;
+   margin-top: 110px;
+}
+
+.about-me__text {
+   margin: 50px auto 50px;
+   text-align: center;
+   max-width: 45%;
+}
+
+.about-me__project-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 90px 0;
+}
+
+.about-me__project-wrap {
+   background-color: $blue;
+}
+
+.about-me__project-item {
+   display: flex;
+}
+
+.about-me__project-img {
+   padding-right: 20px;
+}
+
+.about-me__project--number {
+   color: $white;
+}
+
+.about-me__project-text {
+   color: $white;
+}
+
+@media (max-width: 960px) {
+   .about-me__title {
+      margin-top: 90px;
+   }
+   .about-me__project-list {
+      margin: auto;
+      justify-content: center;
+      padding: 60px 0;
+   }
+   .about-me__project-item {
+      flex: 33%;
+      justify-content: center;
+      padding: 30px;
+   }
+   .about-me__text {
+      max-width: 70%;
+   }
+}
+
+@media (max-width: 768px) {
+   .about-me__title {
+      margin-top: 50px;
+   }
+   .about-me__project-item {
+      padding: 20px;
+   } 
+}
+
+@media (max-width: 420px) {
+   .about-me__project-item {
+      padding: 15px;
+   }
+   .about-me__text {
+      max-width: 90%;
+   }
+}
